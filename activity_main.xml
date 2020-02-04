@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="56dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:background="@drawable/back"
+    android:alpha="1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/mi6"
+        android:alpha="1"/>
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Agent Name"
+        android:textColor="@color/colorAccent"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="18dp"/>
+
+        <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup">
+
+                <RadioButton
+                    android:id="@+id/F"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Female"
+                    android:textSize="15dp" />
+
+                <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/M"
+                                android:text="Male"
+                                android:textSize="15dp"
+                                android:checked="false"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="MI6 Id"
+        android:textColor="@color/colorAccent"
+        />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColor="@color/colorAccent"
+        />
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Login"/>
+
+
+</LinearLayout>
